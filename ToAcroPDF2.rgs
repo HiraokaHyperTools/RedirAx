@@ -1,0 +1,38 @@
+HKCR
+{
+	RedirAx.ToAcroPDF2.1 = s 'Redirect to AcroPDF'
+	{
+		CLSID = s '{010CC513-8EDE-44E6-A74E-C24D25FC2A90}'
+	}
+	RedirAx.ToAcroPDF2 = s 'Redirect to AcroPDF'
+	{
+		CLSID = s '{010CC513-8EDE-44E6-A74E-C24D25FC2A90}'
+		CurVer = s 'RedirAx.ToAcroPDF2.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {010CC513-8EDE-44E6-A74E-C24D25FC2A90} = s 'Redirect to AcroPDF'
+		{
+			ProgID = s 'RedirAx.ToAcroPDF2.1'
+			VersionIndependentProgID = s 'RedirAx.ToAcroPDF2'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			val AppID = s '%APPID%'
+			ForceRemove 'Control'
+			ForceRemove 'ToolboxBitmap32' = s '%MODULE%, 104'
+			'MiscStatus' = s '0'
+			{
+				'1' = s '%OLEMISC%'
+			}
+			'TypeLib' = s '{F8CE5153-7079-4852-A9FD-B5640A1589BF}'
+			'Version' = s '1.0'
+			'EnableFullPage'
+			{
+				'.pdf' { }
+			}
+		}
+	}
+}

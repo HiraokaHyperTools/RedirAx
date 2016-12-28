@@ -1,0 +1,60 @@
+// RedirAx.idl : RedirAx の IDL ソース
+//
+
+// このファイルは、タイプ ライブラリ (RedirAx.tlb) およびマーシャリング コードを
+// 作成するために MIDL ツールによって処理されます。
+
+#include "olectl.h"
+#include "olectl.h"
+import "oaidl.idl";
+import "ocidl.idl";
+
+[
+	object,
+	uuid(23580868-AEBA-4B3A-B8F7-B2BCB49E2509),
+	dual,
+	nonextensible,
+	helpstring("IToAcroPdf インターフェイス"),
+	pointer_default(unique)
+]
+interface IToAcroPdf : IDispatch{
+};
+
+[
+	object,
+	uuid(EA4093A8-C728-4184-A1E1-3C2B13156952),
+	dual,
+	nonextensible,
+	helpstring("IToAcroPDF2 インターフェイス"),
+	pointer_default(unique)
+]
+interface IToAcroPDF2 : IDispatch{
+};
+
+[
+	uuid(F8CE5153-7079-4852-A9FD-B5640A1589BF),
+	version(1.0),
+	helpstring("RedirAx 1.0 タイプ ライブラリ")
+]
+library RedirAxLib
+{
+	importlib("stdole2.tlb");
+	[
+		uuid(C810262B-0F7B-4529-80E5-E37217C20807),
+		control,
+		helpstring("ToAcroPdf Class")
+	]
+	coclass ToAcroPdf
+	{
+		[default] interface IToAcroPdf;
+	};
+	[
+		uuid(010CC513-8EDE-44E6-A74E-C24D25FC2A90),
+		control,
+		helpstring("ToAcroPDF2 Class")
+	]
+	coclass ToAcroPDF2
+	{
+		[default] interface IToAcroPDF2;
+	};
+};

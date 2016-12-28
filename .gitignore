@@ -250,3 +250,5 @@ paket-files/
 # JetBrains Rider
 .idea/
 *.sln.iml
+/Tmpver.nsh
+/Setup_RedirAx.exe
