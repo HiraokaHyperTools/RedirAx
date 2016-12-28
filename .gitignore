@@ -252,3 +252,5 @@ paket-files/
 *.sln.iml
 /Tmpver.nsh
 /Setup_RedirAx.exe
+/RedirAx/Setup_RedirAx.exe
+/RedirAx/Tmpver.nsh

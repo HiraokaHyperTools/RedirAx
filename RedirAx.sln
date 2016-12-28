@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 9.00
 # Visual Studio 2005
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "RedirAx", "RedirAx.vcproj", "{EE8F3C63-F0F7-413D-9E24-B8E401426870}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "RedirAx", "RedirAx\RedirAx.vcproj", "{EE8F3C63-F0F7-413D-9E24-B8E401426870}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "RedirAxPS", "RedirAxPS.vcproj", "{9AC86843-D91A-4F8B-B289-490F60E112B2}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "RedirAxPS", "RedirAx\RedirAxPS.vcproj", "{9AC86843-D91A-4F8B-B289-490F60E112B2}"
 	ProjectSection(ProjectDependencies) = postProject
 		{EE8F3C63-F0F7-413D-9E24-B8E401426870} = {EE8F3C63-F0F7-413D-9E24-B8E401426870}
 	EndProjectSection
