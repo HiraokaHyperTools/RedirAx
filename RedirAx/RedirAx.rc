@@ -53,8 +53,8 @@ END
 //
 
 VS_VERSION_INFO VERSIONINFO
- FILEVERSION 0,1,0,0
- PRODUCTVERSION 0,1,0,0
+ FILEVERSION 0,2,0,0
+ PRODUCTVERSION 0,2,0,0
  FILEFLAGSMASK 0x3fL
 #ifdef _DEBUG
  FILEFLAGS 0x1L
@@ -71,12 +71,12 @@ BEGIN
         BEGIN
             VALUE "CompanyName", "HIRAOKA HYPERS TOOLS, Inc."
             VALUE "FileDescription", "ActiveX Redirector"
-            VALUE "FileVersion", "0, 1, 0, 0"
+            VALUE "FileVersion", "0, 2, 0, 0"
             VALUE "InternalName", "RedirAx.dll"
             VALUE "LegalCopyright", "(C) HIRAOKA HYPERS TOOLS, Inc. All rights reserved."
             VALUE "OriginalFilename", "RedirAx.dll"
             VALUE "ProductName", "RedirAx"
-            VALUE "ProductVersion", "0, 1, 0, 0"
+            VALUE "ProductVersion", "0, 2, 0, 0"
         END
     END
     BLOCK "VarFileInfo"
@@ -141,8 +141,7 @@ END
 
 IDD_TOACROPDF2 DLGINIT
 BEGIN
-    IDC_PDF1, 0x376, 16, 0
-0x0000, 0x0000, 0x0c00, 0x0000, 0x20f8, 0x0000, 0x19f1, 0x0000, 
+    IDC_PDF1, 0x378, 0, 0
     0
 END
 

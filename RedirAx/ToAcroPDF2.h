@@ -317,6 +317,16 @@ public:
 		return __super::DoVerb(iVerb, lpmsg, pActiveSite, lindex, hwndParent, lprcPosRect);
 	}
 
+	HWND Create(HWND hWndParent, RECT& /*rcPos*/, LPARAM dwInitParam = NULL)
+	{
+		CComControl< CToAcroPDF2, CAxDialogImpl< CToAcroPDF2 > >::Create(hWndParent, dwInitParam);
+		if (m_hWnd != NULL) {
+			SetBackgroundColorFromAmbient();
+			ShowWindow(SW_SHOWNOACTIVATE);
+		}
+		return m_hWnd;
+	}
+
 	LRESULT OnSize(UINT /*uMsg*/, WPARAM /*wParam*/, LPARAM /*lParam*/, BOOL& /*bHandled*/);
 	LRESULT OnInitDialog(UINT uMsg, WPARAM wParam, LPARAM lParam, BOOL& bHandled);
 };
